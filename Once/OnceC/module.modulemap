@@ -1,0 +1,4 @@
+module OnceC [system] {
+    header "OnceC.h"
+    export *
+}

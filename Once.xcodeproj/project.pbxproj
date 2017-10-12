@@ -7,18 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F810EF011F8F2E1C00025AD1 /* OnceC.c in Sources */ = {isa = PBXBuildFile; fileRef = F810EEFF1F8F2E1C00025AD1 /* OnceC.c */; };
+		F810EF051F8F2E5700025AD1 /* Once.swift in Sources */ = {isa = PBXBuildFile; fileRef = F810EF041F8F2E5700025AD1 /* Once.swift */; };
+		F810EF0D1F8F302700025AD1 /* OnceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F810EF0C1F8F302700025AD1 /* OnceTests.swift */; };
+		F810EF0F1F8F302700025AD1 /* Once.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8CCE8741F8E82E3007F191B /* Once.framework */; };
 		F8CCE8791F8E82E3007F191B /* Once.h in Headers */ = {isa = PBXBuildFile; fileRef = F8CCE8771F8E82E3007F191B /* Once.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F810EF101F8F302700025AD1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8CCE86B1F8E82E3007F191B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8CCE8731F8E82E3007F191B;
+			remoteInfo = Once;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F810EEFA1F8F2B3E00025AD1 /* LICENCE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENCE; sourceTree = "<group>"; };
 		F810EEFB1F8F2B4D00025AD1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F810EEFE1F8F2DEE00025AD1 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		F810EEFF1F8F2E1C00025AD1 /* OnceC.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = OnceC.c; sourceTree = "<group>"; };
+		F810EF001F8F2E1C00025AD1 /* OnceC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnceC.h; sourceTree = "<group>"; };
+		F810EF041F8F2E5700025AD1 /* Once.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Once.swift; sourceTree = "<group>"; };
+		F810EF0A1F8F302700025AD1 /* OnceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F810EF0C1F8F302700025AD1 /* OnceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnceTests.swift; sourceTree = "<group>"; };
+		F810EF0E1F8F302700025AD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8CCE8741F8E82E3007F191B /* Once.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Once.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CCE8771F8E82E3007F191B /* Once.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Once.h; sourceTree = "<group>"; };
 		F8CCE8781F8E82E3007F191B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F810EF071F8F302700025AD1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F810EF0F1F8F302700025AD1 /* Once.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8CCE8701F8E82E3007F191B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -29,12 +58,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F810EEFD1F8F2D9000025AD1 /* OnceC */ = {
+			isa = PBXGroup;
+			children = (
+				F810EEFE1F8F2DEE00025AD1 /* module.modulemap */,
+				F810EEFF1F8F2E1C00025AD1 /* OnceC.c */,
+				F810EF001F8F2E1C00025AD1 /* OnceC.h */,
+			);
+			path = OnceC;
+			sourceTree = "<group>";
+		};
+		F810EF031F8F2E4700025AD1 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				F810EF041F8F2E5700025AD1 /* Once.swift */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		F810EF0B1F8F302700025AD1 /* OnceTests */ = {
+			isa = PBXGroup;
+			children = (
+				F810EF0C1F8F302700025AD1 /* OnceTests.swift */,
+				F810EF0E1F8F302700025AD1 /* Info.plist */,
+			);
+			path = OnceTests;
+			sourceTree = "<group>";
+		};
 		F8CCE86A1F8E82E3007F191B = {
 			isa = PBXGroup;
 			children = (
 				F810EEFB1F8F2B4D00025AD1 /* README.md */,
 				F810EEFA1F8F2B3E00025AD1 /* LICENCE */,
 				F8CCE8761F8E82E3007F191B /* Once */,
+				F810EF0B1F8F302700025AD1 /* OnceTests */,
 				F8CCE8751F8E82E3007F191B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				F8CCE8741F8E82E3007F191B /* Once.framework */,
+				F810EF0A1F8F302700025AD1 /* OnceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -50,6 +108,8 @@
 		F8CCE8761F8E82E3007F191B /* Once */ = {
 			isa = PBXGroup;
 			children = (
+				F810EF031F8F2E4700025AD1 /* Swift */,
+				F810EEFD1F8F2D9000025AD1 /* OnceC */,
 				F8CCE8771F8E82E3007F191B /* Once.h */,
 				F8CCE8781F8E82E3007F191B /* Info.plist */,
 			);
@@ -70,6 +130,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		F810EF091F8F302700025AD1 /* OnceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F810EF121F8F302700025AD1 /* Build configuration list for PBXNativeTarget "OnceTests" */;
+			buildPhases = (
+				F810EF061F8F302700025AD1 /* Sources */,
+				F810EF071F8F302700025AD1 /* Frameworks */,
+				F810EF081F8F302700025AD1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F810EF111F8F302700025AD1 /* PBXTargetDependency */,
+			);
+			name = OnceTests;
+			productName = OnceTests;
+			productReference = F810EF0A1F8F302700025AD1 /* OnceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F8CCE8731F8E82E3007F191B /* Once */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8CCE87C1F8E82E3007F191B /* Build configuration list for PBXNativeTarget "Once" */;
@@ -94,11 +172,17 @@
 		F8CCE86B1F8E82E3007F191B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Braden Scothern";
 				TargetAttributes = {
+					F810EF091F8F302700025AD1 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
 					F8CCE8731F8E82E3007F191B = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Manual;
 					};
 				};
@@ -116,11 +200,19 @@
 			projectRoot = "";
 			targets = (
 				F8CCE8731F8E82E3007F191B /* Once */,
+				F810EF091F8F302700025AD1 /* OnceTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F810EF081F8F302700025AD1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8CCE8721F8E82E3007F191B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,16 +223,60 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F810EF061F8F302700025AD1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F810EF0D1F8F302700025AD1 /* OnceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8CCE86F1F8E82E3007F191B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F810EF051F8F2E5700025AD1 /* Once.swift in Sources */,
+				F810EF011F8F2E1C00025AD1 /* OnceC.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F810EF111F8F302700025AD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8CCE8731F8E82E3007F191B /* Once */;
+			targetProxy = F810EF101F8F302700025AD1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		F810EF131F8F302700025AD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OnceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bscothern.OnceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F810EF141F8F302700025AD1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OnceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bscothern.OnceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		F8CCE87A1F8E82E3007F191B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -257,6 +393,7 @@
 		F8CCE87D1F8E82E3007F191B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
@@ -267,10 +404,12 @@
 				INFOPLIST_FILE = Once/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "DanceToaster-LLC.Once";
+				PRODUCT_BUNDLE_IDENTIFIER = bscothern.Once;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Once/OnceC";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -279,6 +418,7 @@
 		F8CCE87E1F8E82E3007F191B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
@@ -289,10 +429,11 @@
 				INFOPLIST_FILE = Once/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "DanceToaster-LLC.Once";
+				PRODUCT_BUNDLE_IDENTIFIER = bscothern.Once;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_INCLUDE_PATHS = "${SRCROOT}/Once/OnceC";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,6 +442,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F810EF121F8F302700025AD1 /* Build configuration list for PBXNativeTarget "OnceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F810EF131F8F302700025AD1 /* Debug */,
+				F810EF141F8F302700025AD1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F8CCE86E1F8E82E3007F191B /* Build configuration list for PBXProject "Once" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
