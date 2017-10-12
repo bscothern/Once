@@ -8,9 +8,6 @@
 
 import XCTest
 @testable import Once
-@testable import OnceC
-
-var testingAddress: UnsafeRawPointer? = nil
 
 class OnceTests: XCTestCase {
     
