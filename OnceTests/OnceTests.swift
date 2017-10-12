@@ -8,6 +8,9 @@
 
 import XCTest
 @testable import Once
+@testable import OnceC
+
+var testingAddress: UnsafeRawPointer? = nil
 
 class OnceTests: XCTestCase {
     
@@ -21,7 +24,14 @@ class OnceTests: XCTestCase {
         super.tearDown()
     }
     
-    func test1() {
-        bar()
+    func testOnceLooped() {
+        let once = Once()
+        var count: Int = 0
+        for _ in 0..<1000 {
+            once.run {
+                count += 1
+            }
+        }
+        XCTAssert(count == 1, "Count is: \(count)")
     }
 }
