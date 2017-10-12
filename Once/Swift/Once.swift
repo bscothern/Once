@@ -17,11 +17,10 @@ public class Once {
     
     func run(_ block: @escaping Block) {
         self.block = block
-        OnceCRun(&onceC, runner(for: block))
+        OnceCRun(&onceC, runner(for: block), Unmanaged<Once>.passUnretained(self).toOpaque())
     }
 
     private func runner(for block: @escaping Block) -> OnceBlock {
-        SaveOnceContextPointer(Unmanaged<Once>.passUnretained(self).toOpaque())
         return {
             let once: Once = Unmanaged<Once>.fromOpaque(GetOnceContextPointer()).takeUnretainedValue()
             once.block?()

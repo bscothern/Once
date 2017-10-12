@@ -26,13 +26,10 @@ typedef void (*OnceBlock)(void);
 /// This will initialize the `pthread_once_t` that is backing up how Once works.
 OnceC OnceCCreate(void);
 
-/// Runs the block using pthread_once
-void OnceCRun(OnceC* onceC, OnceBlock block);
-
-/// Save `contextAddress` as the pointer for the once block that will be executed.
+/// Runs the block using pthread_once.
 ///
-/// This uses thread local storage.
-void SaveOnceContextPointer(const void* contextPointer);
+/// The context will be saved so the block can then access it via `GetOnceContextPointer()`
+void OnceCRun(OnceC* onceC, OnceBlock block, const void* context);
 
 /// Get the current context pointer.
 ///
