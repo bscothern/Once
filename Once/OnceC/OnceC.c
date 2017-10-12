@@ -17,8 +17,6 @@ void SaveOnceContextPointer(const void* contextPointer);
 static pthread_once_t oncePthreadSwiftContextKey = PTHREAD_ONCE_INIT;
 static pthread_key_t pthreadSwiftContextKey;
 
-
-
 OnceC OnceCCreate(void) {
     pthread_once(&oncePthreadSwiftContextKey, SetupThreadStorageKey);
     return (OnceC) { .p_once = PTHREAD_ONCE_INIT };

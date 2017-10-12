@@ -9,21 +9,25 @@
 import Foundation
 import OnceC
 
-public class Once {
-    typealias Block = () -> Void
+public struct Once {
+    //MARK:- Types
+    //MARK: Public
+    public typealias Block = () -> Void
     
-    private var onceC: OnceC = OnceCCreate()
-    private var block: Block? = nil
-    
-    func run(_ block: @escaping Block) {
-        self.block = block
-        OnceCRun(&onceC, runner(for: block), Unmanaged<Once>.passUnretained(self).toOpaque())
+    //MARK:- Properties
+    //MARK: Private Static
+    private static let runner: OnceBlock = {
+        UnsafePointer<Block>(OpaquePointer(GetOnceContextPointer()))?.pointee()
     }
-
-    private func runner(for block: @escaping Block) -> OnceBlock {
-        return {
-            let once: Once = Unmanaged<Once>.fromOpaque(GetOnceContextPointer()).takeUnretainedValue()
-            once.block?()
-        }
+    
+    //MARK: Private
+    private var onceC: OnceC = OnceCCreate()
+    
+    //MARK:- Funcs
+    //MARK: Public
+    public mutating func run(_ block: @escaping Block) {
+        var block = block
+        let blockPointer =  withUnsafePointer(to: &block) { UnsafePointer($0) }
+        OnceCRun(&onceC, Once.runner, blockPointer)
     }
 }
