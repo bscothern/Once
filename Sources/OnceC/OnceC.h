@@ -31,7 +31,7 @@
 
 #include <pthread.h>
 
-/// The struct that we will expose to Swift since we cannot access `pthread_once_t`.
+/// The struct that we will use in Swift since we cannot directly access `pthread_once_t`.
 ///
 /// Because this only contains the `pthread_once_t`, it will be identical in size.
 typedef struct _OnceC {
@@ -48,12 +48,16 @@ OnceC OnceCCreate(void);
 
 /// Runs the block using pthread_once.
 ///
-/// The context will be saved so the block can then access it via `GetOnceContextPointer()`
+/// The context will be saved so the block can then access it via `OnceGetContextPointer()`
+///
+/// @param onceC The `OnceC` that should be used to protect the `block` of code that should be executed.
+/// @param block The function that should be executed and protected by `onceC`.
+/// @param context The context pointer that will be stored into thread local storage so it can be accessed in the `block`'s execution.
 void OnceCRun(OnceC* onceC, OnceBlock block, const void* context);
 
 /// Get the current context pointer.
 ///
 /// This uses thread local storage.
-const void* GetOnceContextPointer(void);
+const void* OnceGetContextPointer(void);
 
 #endif /* OnceC_h */

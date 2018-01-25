@@ -28,15 +28,27 @@
 
 import Foundation
 
+/// A protection mechanism to ensure that makes sure a block of code only executes once regardless of how many threads attempt access at the same time.
+///
+/// - Important:
+///     Multiple `Once` instances should be used if there is more than one `Block` that should execute exactly once.
+///     This is because a `Once` cannot protect multiple `Block`s.
+///     If the same `Once` is used with multiple blocks, only the first execution of `run()` will execute.
 public class Once {
     //MARK:- Types
     //MARK: Public
+    
+    /// The type of function that a `Once` can guarantee executes once.
     public typealias Block = () -> Void
     
     //MARK:- Properties
     //MARK: Private Static
+    
+    /// The helper funciton that is used to bridge the C and Swift functions in order to allow calling of the `Block`.
+    ///
+    /// This is needed in order to allow the `Block` to have context since C function pointers cannot keep swift context.
     private static let runner: OnceBlock = {
-        UnsafePointer<Block>(OpaquePointer(GetOnceContextPointer()))?.pointee()
+        UnsafePointer<Block>(OpaquePointer(OnceGetContextPointer()))?.pointee()
     }
     
     //MARK: Private
@@ -44,9 +56,14 @@ public class Once {
     
     //MARK:- Funcs
     //MARK: Public
+    
+    /// The funciton that runs the given `Block` if the `Once` hasn't already executed.
+    ///
+    /// - Parameter block: The `Block` that should be executed once.
     public func run(_ block: @escaping Block) {
         var block = block
-        let blockPointer =  withUnsafePointer(to: &block) { UnsafePointer($0) }
-        OnceCRun(&onceC, Once.runner, blockPointer)
+        withUnsafePointer(to: &block) {
+            OnceCRun(&onceC, Once.runner, $0)
+        }
     }
 }
