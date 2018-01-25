@@ -28,7 +28,7 @@
 
 import Foundation
 
-/// A protection mechanism to ensure that makes sure a block of code only executes once regardless of how many threads attempt access at the same time.
+/// A thread safe protection mechanism to ensure that makes sure a block of code only executes once.
 ///
 /// - Important:
 ///     Multiple `Once` instances should be used if there is more than one `Block` that should execute exactly once.

@@ -2,7 +2,7 @@
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/Carthage/Carthage/master/LICENSE.md) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-A replacement for Dispatch Once in Swift.
+A simple thread safe replacement for Dispatch Once and pthread_once for Swift.
 
 ## Carthage Usage
 
@@ -12,7 +12,6 @@ github "bscothern/Once"
 ```
 
 ## Usage
-
 ```
 let once = Once()
 
