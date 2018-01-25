@@ -161,12 +161,11 @@
 		F8CCE86A1F8E82E3007F191B = {
 			isa = PBXGroup;
 			children = (
-				F810EEFB1F8F2B4D00025AD1 /* README.md */,
-				F810EEFA1F8F2B3E00025AD1 /* LICENCE */,
 				F8CD25E520199E7300952299 /* Sources */,
 				F8CD25E620199E7C00952299 /* Tests */,
-				F8CCE8761F8E82E3007F191B /* Once */,
 				F8CCE8751F8E82E3007F191B /* Products */,
+				F810EEFB1F8F2B4D00025AD1 /* README.md */,
+				F810EEFA1F8F2B3E00025AD1 /* LICENCE */,
 			);
 			sourceTree = "<group>";
 		};
@@ -182,13 +181,6 @@
 				F8CD25DA20199D4A00952299 /* Once.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		F8CCE8761F8E82E3007F191B /* Once */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Once;
 			sourceTree = "<group>";
 		};
 		F8CD25E520199E7300952299 /* Sources */ = {
