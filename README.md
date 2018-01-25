@@ -10,3 +10,16 @@ Include this line in your `Cartfile`:
 ```
 github "bscothern/Once"
 ```
+
+## Usage
+
+```
+let once = Once()
+
+func foo() {
+    once.runOnce {
+        // Do stuff that should only execute the first time foo() is called.
+    }
+    // Do stuff
+}
+```

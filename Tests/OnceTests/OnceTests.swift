@@ -45,7 +45,7 @@ class OnceTests: XCTestCase {
         let once = Once()
         var count: Int = 0
         for _ in 0..<1000 {
-            once.run {
+            once.runOnce {
                 count += 1
             }
         }
