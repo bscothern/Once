@@ -37,31 +37,31 @@ import Foundation
 public class Once {
     //MARK:- Types
     //MARK: Public
-    
+
     /// The type of function that a `Once` can guarantee executes once.
     public typealias Block = () -> Void
-    
+
     //MARK:- Properties
     //MARK: Private Static
-    
+
     /// The helper funciton that is used to bridge the C and Swift functions in order to allow calling of the `Block`.
     ///
     /// This is needed in order to allow the `Block` to have context since C function pointers cannot keep swift context.
     private static let runner: OnceBlock = {
         UnsafePointer<Block>(OpaquePointer(OnceGetContextPointer()))?.pointee()
     }
-    
+
     //MARK: Private
     private var onceC: OnceC = OnceCCreate()
-    
+
     //MARK:- Init
     //MARK: Public
     public init() {
     }
-    
+
     //MARK:- Funcs
     //MARK: Public
-    
+
     /// The funciton that runs the given `Block` if the `Once` hasn't already executed.
     ///
     /// - Parameter block: The `Block` that should be executed once.
