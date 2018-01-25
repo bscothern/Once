@@ -7,9 +7,8 @@
 //
 
 import Foundation
-import OnceC
 
-public struct Once {
+public class Once {
     //MARK:- Types
     //MARK: Public
     public typealias Block = () -> Void
@@ -25,7 +24,7 @@ public struct Once {
     
     //MARK:- Funcs
     //MARK: Public
-    public mutating func run(_ block: @escaping Block) {
+    public func run(_ block: @escaping Block) {
         var block = block
         let blockPointer =  withUnsafePointer(to: &block) { UnsafePointer($0) }
         OnceCRun(&onceC, Once.runner, blockPointer)

@@ -1,0 +1,5 @@
+framework module Once {
+    header "Once.h"
+    
+    private header "OnceC.h"
+}
