@@ -54,16 +54,23 @@ public class Once {
     //MARK: Private
     private var onceC: OnceC = OnceCCreate()
     
+    //MARK:- Init
+    //MARK: Public
+    public init() {
+    }
+    
     //MARK:- Funcs
     //MARK: Public
     
     /// The funciton that runs the given `Block` if the `Once` hasn't already executed.
     ///
     /// - Parameter block: The `Block` that should be executed once.
-    public func run(_ block: @escaping Block) {
-        var block = block
-        withUnsafePointer(to: &block) {
-            OnceCRun(&onceC, Once.runner, $0)
+    public func runOnce(_ block: Block) {
+        withoutActuallyEscaping(block) { block in
+            var block = block
+            withUnsafePointer(to: &block) { block in
+                OnceCRun(&onceC, Once.runner, block)
+            }
         }
     }
 }
