@@ -73,7 +73,7 @@
 		F8CD25DA20199D4A00952299 /* Once.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Once.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CD25E820199EF300952299 /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
 		F8DCC017206446B00050155E /* OnceC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnceC.h; sourceTree = "<group>"; };
-		F8DCC018206446B00050155E /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		F8DCC018206446B00050155E /* xcode.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = xcode.modulemap; sourceTree = "<group>"; };
 		F8DCC01A206448620050155E /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -189,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				F8CCE8771F8E82E3007F191B /* Once.h */,
+				F8DCC018206446B00050155E /* xcode.modulemap */,
 				F8CCE8781F8E82E3007F191B /* Info.plist */,
 				F810EEFD1F8F2D9000025AD1 /* OnceC */,
 				F810EF031F8F2E4700025AD1 /* Swift */,
@@ -209,7 +210,6 @@
 			isa = PBXGroup;
 			children = (
 				F8DCC016206446B00050155E /* OnceC */,
-				F8DCC018206446B00050155E /* module.modulemap */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -714,7 +714,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/OnceC/include/module.modulemap";
+				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/xcode.modulemap";
 				OTHER_CFLAGS = "-DXCODE_FRAMEWORK=1";
 				OTHER_SWIFT_FLAGS = "-DXCODE_FRAMEWORK";
 				PRODUCT_BUNDLE_IDENTIFIER = "Braden-Scothern.Once-iOS";
@@ -741,7 +741,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/OnceC/include/module.modulemap";
+				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/xcode.modulemap";
 				OTHER_CFLAGS = "-DXCODE_FRAMEWORK=1";
 				OTHER_SWIFT_FLAGS = "-DXCODE_FRAMEWORK";
 				PRODUCT_BUNDLE_IDENTIFIER = "Braden-Scothern.Once-iOS";
@@ -805,7 +805,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/OnceC/include/module.modulemap";
+				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/xcode.modulemap";
 				OTHER_CFLAGS = "-DXCODE_FRAMEWORK=1";
 				OTHER_SWIFT_FLAGS = "-DXCODE_FRAMEWORK";
 				PRODUCT_BUNDLE_IDENTIFIER = "Braden-Scothern.Once-macOS";
@@ -834,7 +834,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/OnceC/include/module.modulemap";
+				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/xcode.modulemap";
 				OTHER_CFLAGS = "-DXCODE_FRAMEWORK=1";
 				OTHER_SWIFT_FLAGS = "-DXCODE_FRAMEWORK";
 				PRODUCT_BUNDLE_IDENTIFIER = "Braden-Scothern.Once-macOS";
@@ -898,7 +898,7 @@
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/OnceC/include/module.modulemap";
+				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/xcode.modulemap";
 				OTHER_CFLAGS = "-DXCODE_FRAMEWORK=1";
 				OTHER_SWIFT_FLAGS = "-DXCODE_FRAMEWORK";
 				PRODUCT_BUNDLE_IDENTIFIER = "Braden-Scothern.Once-tvOS";
@@ -926,7 +926,7 @@
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/OnceC/include/module.modulemap";
+				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/xcode.modulemap";
 				OTHER_CFLAGS = "-DXCODE_FRAMEWORK=1";
 				OTHER_SWIFT_FLAGS = "-DXCODE_FRAMEWORK";
 				PRODUCT_BUNDLE_IDENTIFIER = "Braden-Scothern.Once-tvOS";
@@ -991,7 +991,7 @@
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/OnceC/include/module.modulemap";
+				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/xcode.modulemap";
 				OTHER_CFLAGS = "-DXCODE_FRAMEWORK=1";
 				OTHER_SWIFT_FLAGS = "-DXCODE_FRAMEWORK";
 				PRODUCT_BUNDLE_IDENTIFIER = "Braden-Scothern.Once-watchOS";
@@ -1020,7 +1020,7 @@
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/OnceC/include/module.modulemap";
+				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/xcode.modulemap";
 				OTHER_CFLAGS = "-DXCODE_FRAMEWORK=1";
 				OTHER_SWIFT_FLAGS = "-DXCODE_FRAMEWORK";
 				PRODUCT_BUNDLE_IDENTIFIER = "Braden-Scothern.Once-watchOS";
