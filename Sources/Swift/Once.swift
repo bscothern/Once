@@ -26,6 +26,10 @@
 // SOFTWARE.
 //
 
+#if XCODE_FRAMEWORK
+#else
+import OnceC
+#endif
 import Foundation
 
 /// A thread safe protection mechanism to ensure that makes sure a block of code only executes once.

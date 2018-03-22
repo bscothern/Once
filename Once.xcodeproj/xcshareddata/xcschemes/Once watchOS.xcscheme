@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F8CD25D920199D4A00952299"
-               BuildableName = "Once_watchOS.framework"
+               BuildableName = "Once.framework"
                BlueprintName = "Once watchOS"
                ReferencedContainer = "container:Once.xcodeproj">
             </BuildableReference>
@@ -49,7 +49,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F8CD25D920199D4A00952299"
-            BuildableName = "Once_watchOS.framework"
+            BuildableName = "Once.framework"
             BlueprintName = "Once watchOS"
             ReferencedContainer = "container:Once.xcodeproj">
          </BuildableReference>
@@ -67,7 +67,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F8CD25D920199D4A00952299"
-            BuildableName = "Once_watchOS.framework"
+            BuildableName = "Once.framework"
             BlueprintName = "Once watchOS"
             ReferencedContainer = "container:Once.xcodeproj">
          </BuildableReference>

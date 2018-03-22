@@ -13,22 +13,22 @@
 		F8CD25E92019A01600952299 /* OnceC.c in Sources */ = {isa = PBXBuildFile; fileRef = F810EEFF1F8F2E1C00025AD1 /* OnceC.c */; };
 		F8CD25EA2019A01600952299 /* Once.swift in Sources */ = {isa = PBXBuildFile; fileRef = F810EF041F8F2E5700025AD1 /* Once.swift */; };
 		F8CD25EB2019A01F00952299 /* Once.h in Headers */ = {isa = PBXBuildFile; fileRef = F8CCE8771F8E82E3007F191B /* Once.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8CD25EC2019A01F00952299 /* OnceC.h in Headers */ = {isa = PBXBuildFile; fileRef = F810EF001F8F2E1C00025AD1 /* OnceC.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		F8CD25ED2019A0F800952299 /* OnceC.c in Sources */ = {isa = PBXBuildFile; fileRef = F810EEFF1F8F2E1C00025AD1 /* OnceC.c */; };
 		F8CD25EE2019A0F800952299 /* Once.swift in Sources */ = {isa = PBXBuildFile; fileRef = F810EF041F8F2E5700025AD1 /* Once.swift */; };
 		F8CD25EF2019A0FD00952299 /* Once.h in Headers */ = {isa = PBXBuildFile; fileRef = F8CCE8771F8E82E3007F191B /* Once.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8CD25F02019A0FD00952299 /* OnceC.h in Headers */ = {isa = PBXBuildFile; fileRef = F810EF001F8F2E1C00025AD1 /* OnceC.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		F8CD25F12019A10800952299 /* OnceC.c in Sources */ = {isa = PBXBuildFile; fileRef = F810EEFF1F8F2E1C00025AD1 /* OnceC.c */; };
 		F8CD25F22019A10800952299 /* Once.swift in Sources */ = {isa = PBXBuildFile; fileRef = F810EF041F8F2E5700025AD1 /* Once.swift */; };
 		F8CD25F32019A10C00952299 /* Once.h in Headers */ = {isa = PBXBuildFile; fileRef = F8CCE8771F8E82E3007F191B /* Once.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8CD25F42019A10C00952299 /* OnceC.h in Headers */ = {isa = PBXBuildFile; fileRef = F810EF001F8F2E1C00025AD1 /* OnceC.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		F8CD25F52019A11A00952299 /* OnceC.c in Sources */ = {isa = PBXBuildFile; fileRef = F810EEFF1F8F2E1C00025AD1 /* OnceC.c */; };
 		F8CD25F62019A11A00952299 /* Once.swift in Sources */ = {isa = PBXBuildFile; fileRef = F810EF041F8F2E5700025AD1 /* Once.swift */; };
 		F8CD25F72019A11F00952299 /* Once.h in Headers */ = {isa = PBXBuildFile; fileRef = F8CCE8771F8E82E3007F191B /* Once.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8CD25F82019A11F00952299 /* OnceC.h in Headers */ = {isa = PBXBuildFile; fileRef = F810EF001F8F2E1C00025AD1 /* OnceC.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		F8CD25F92019A19A00952299 /* OnceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F810EF0C1F8F302700025AD1 /* OnceTests.swift */; };
 		F8CD25FA2019A19F00952299 /* OnceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F810EF0C1F8F302700025AD1 /* OnceTests.swift */; };
 		F8CD25FB2019A1A500952299 /* OnceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F810EF0C1F8F302700025AD1 /* OnceTests.swift */; };
+		F8DCC019206446B00050155E /* OnceC.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DCC017206446B00050155E /* OnceC.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F8DCC01C206451F70050155E /* OnceC.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DCC017206446B00050155E /* OnceC.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F8DCC01D206451F80050155E /* OnceC.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DCC017206446B00050155E /* OnceC.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F8DCC01E206451F90050155E /* OnceC.h in Headers */ = {isa = PBXBuildFile; fileRef = F8DCC017206446B00050155E /* OnceC.h */; settings = {ATTRIBUTES = (Private, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,9 +58,7 @@
 /* Begin PBXFileReference section */
 		F810EEFA1F8F2B3E00025AD1 /* LICENCE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENCE; sourceTree = "<group>"; };
 		F810EEFB1F8F2B4D00025AD1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		F810EEFE1F8F2DEE00025AD1 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		F810EEFF1F8F2E1C00025AD1 /* OnceC.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = OnceC.c; sourceTree = "<group>"; };
-		F810EF001F8F2E1C00025AD1 /* OnceC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnceC.h; sourceTree = "<group>"; };
 		F810EF041F8F2E5700025AD1 /* Once.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Once.swift; sourceTree = "<group>"; };
 		F810EF0C1F8F302700025AD1 /* OnceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnceTests.swift; sourceTree = "<group>"; };
 		F810EF0E1F8F302700025AD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,6 +72,9 @@
 		F8CD25C620199D3800952299 /* Once tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Once tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CD25DA20199D4A00952299 /* Once.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Once.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CD25E820199EF300952299 /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
+		F8DCC017206446B00050155E /* OnceC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnceC.h; sourceTree = "<group>"; };
+		F8DCC018206446B00050155E /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		F8DCC01A206448620050155E /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,8 +136,8 @@
 		F810EEFD1F8F2D9000025AD1 /* OnceC */ = {
 			isa = PBXGroup;
 			children = (
+				F8DCC015206446B00050155E /* include */,
 				F810EEFF1F8F2E1C00025AD1 /* OnceC.c */,
-				F810EF001F8F2E1C00025AD1 /* OnceC.h */,
 			);
 			path = OnceC;
 			sourceTree = "<group>";
@@ -161,6 +162,7 @@
 		F8CCE86A1F8E82E3007F191B = {
 			isa = PBXGroup;
 			children = (
+				F8DCC01A206448620050155E /* Package.swift */,
 				F8CD25E520199E7300952299 /* Sources */,
 				F8CD25E620199E7C00952299 /* Tests */,
 				F8CCE8751F8E82E3007F191B /* Products */,
@@ -186,7 +188,6 @@
 		F8CD25E520199E7300952299 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				F810EEFE1F8F2DEE00025AD1 /* module.modulemap */,
 				F8CCE8771F8E82E3007F191B /* Once.h */,
 				F8CCE8781F8E82E3007F191B /* Info.plist */,
 				F810EEFD1F8F2D9000025AD1 /* OnceC */,
@@ -204,6 +205,23 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		F8DCC015206446B00050155E /* include */ = {
+			isa = PBXGroup;
+			children = (
+				F8DCC016206446B00050155E /* OnceC */,
+				F8DCC018206446B00050155E /* module.modulemap */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		F8DCC016206446B00050155E /* OnceC */ = {
+			isa = PBXGroup;
+			children = (
+				F8DCC017206446B00050155E /* OnceC.h */,
+			);
+			path = OnceC;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -212,7 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8CD25EB2019A01F00952299 /* Once.h in Headers */,
-				F8CD25EC2019A01F00952299 /* OnceC.h in Headers */,
+				F8DCC019206446B00050155E /* OnceC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8CD25EF2019A0FD00952299 /* Once.h in Headers */,
-				F8CD25F02019A0FD00952299 /* OnceC.h in Headers */,
+				F8DCC01C206451F70050155E /* OnceC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,7 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8CD25F32019A10C00952299 /* Once.h in Headers */,
-				F8CD25F42019A10C00952299 /* OnceC.h in Headers */,
+				F8DCC01D206451F80050155E /* OnceC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,7 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8CD25F72019A11F00952299 /* Once.h in Headers */,
-				F8CD25F82019A11F00952299 /* OnceC.h in Headers */,
+				F8DCC01E206451F90050155E /* OnceC.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -696,7 +714,9 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/module.modulemap";
+				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/OnceC/include/module.modulemap";
+				OTHER_CFLAGS = "-DXCODE_FRAMEWORK=1";
+				OTHER_SWIFT_FLAGS = "-DXCODE_FRAMEWORK";
 				PRODUCT_BUNDLE_IDENTIFIER = "Braden-Scothern.Once-iOS";
 				PRODUCT_NAME = Once;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -721,11 +741,14 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/module.modulemap";
+				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/OnceC/include/module.modulemap";
+				OTHER_CFLAGS = "-DXCODE_FRAMEWORK=1";
+				OTHER_SWIFT_FLAGS = "-DXCODE_FRAMEWORK";
 				PRODUCT_BUNDLE_IDENTIFIER = "Braden-Scothern.Once-iOS";
 				PRODUCT_NAME = Once;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -782,7 +805,9 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/module.modulemap";
+				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/OnceC/include/module.modulemap";
+				OTHER_CFLAGS = "-DXCODE_FRAMEWORK=1";
+				OTHER_SWIFT_FLAGS = "-DXCODE_FRAMEWORK";
 				PRODUCT_BUNDLE_IDENTIFIER = "Braden-Scothern.Once-macOS";
 				PRODUCT_NAME = Once;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -809,7 +834,9 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/module.modulemap";
+				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/OnceC/include/module.modulemap";
+				OTHER_CFLAGS = "-DXCODE_FRAMEWORK=1";
+				OTHER_SWIFT_FLAGS = "-DXCODE_FRAMEWORK";
 				PRODUCT_BUNDLE_IDENTIFIER = "Braden-Scothern.Once-macOS";
 				PRODUCT_NAME = Once;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -871,7 +898,9 @@
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/module.modulemap";
+				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/OnceC/include/module.modulemap";
+				OTHER_CFLAGS = "-DXCODE_FRAMEWORK=1";
+				OTHER_SWIFT_FLAGS = "-DXCODE_FRAMEWORK";
 				PRODUCT_BUNDLE_IDENTIFIER = "Braden-Scothern.Once-tvOS";
 				PRODUCT_NAME = Once;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -897,7 +926,9 @@
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/module.modulemap";
+				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/OnceC/include/module.modulemap";
+				OTHER_CFLAGS = "-DXCODE_FRAMEWORK=1";
+				OTHER_SWIFT_FLAGS = "-DXCODE_FRAMEWORK";
 				PRODUCT_BUNDLE_IDENTIFIER = "Braden-Scothern.Once-tvOS";
 				PRODUCT_NAME = Once;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -960,7 +991,9 @@
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/module.modulemap";
+				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/OnceC/include/module.modulemap";
+				OTHER_CFLAGS = "-DXCODE_FRAMEWORK=1";
+				OTHER_SWIFT_FLAGS = "-DXCODE_FRAMEWORK";
 				PRODUCT_BUNDLE_IDENTIFIER = "Braden-Scothern.Once-watchOS";
 				PRODUCT_NAME = Once;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -987,7 +1020,9 @@
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/module.modulemap";
+				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/OnceC/include/module.modulemap";
+				OTHER_CFLAGS = "-DXCODE_FRAMEWORK=1";
+				OTHER_SWIFT_FLAGS = "-DXCODE_FRAMEWORK";
 				PRODUCT_BUNDLE_IDENTIFIER = "Braden-Scothern.Once-watchOS";
 				PRODUCT_NAME = Once;
 				PROVISIONING_PROFILE_SPECIFIER = "";

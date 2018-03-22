@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F8CD25A120199D1000952299"
-               BuildableName = "Once_macOS.framework"
+               BuildableName = "Once.framework"
                BlueprintName = "Once macOS"
                ReferencedContainer = "container:Once.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F8CD25A120199D1000952299"
-            BuildableName = "Once_macOS.framework"
+            BuildableName = "Once.framework"
             BlueprintName = "Once macOS"
             ReferencedContainer = "container:Once.xcodeproj">
          </BuildableReference>
@@ -68,7 +68,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F8CD25A120199D1000952299"
-            BuildableName = "Once_macOS.framework"
+            BuildableName = "Once.framework"
             BlueprintName = "Once macOS"
             ReferencedContainer = "container:Once.xcodeproj">
          </BuildableReference>
@@ -86,7 +86,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F8CD25A120199D1000952299"
-            BuildableName = "Once_macOS.framework"
+            BuildableName = "Once.framework"
             BlueprintName = "Once macOS"
             ReferencedContainer = "container:Once.xcodeproj">
          </BuildableReference>
