@@ -19,6 +19,8 @@ Update your Package.swift to include this to your package dependencies:
 
 ## Usage
 ```
+import Once
+
 let once = Once()
 
 func foo() {
