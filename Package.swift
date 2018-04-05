@@ -58,4 +58,3 @@ let package = Package(
             dependencies: ["Once"]),
         ]
 )
-
