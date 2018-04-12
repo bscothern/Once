@@ -26,8 +26,7 @@
 // SOFTWARE.
 //
 
-#if XCODE_FRAMEWORK
-#else
+#if SWIFT_PACKAGE
 import OnceC
 #endif
 import Foundation
