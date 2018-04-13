@@ -209,17 +209,9 @@
 		F8DCC015206446B00050155E /* include */ = {
 			isa = PBXGroup;
 			children = (
-				F8DCC016206446B00050155E /* OnceC */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		F8DCC016206446B00050155E /* OnceC */ = {
-			isa = PBXGroup;
-			children = (
 				F8DCC017206446B00050155E /* OnceC.h */,
 			);
-			path = OnceC;
+			path = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -720,7 +712,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/module.modulemap";
 				OTHER_CFLAGS = "-DXCODE_FRAMEWORK=1";
-				OTHER_SWIFT_FLAGS = "-DXCODE_FRAMEWORK";
 				PRODUCT_BUNDLE_IDENTIFIER = "Braden-Scothern.Once-iOS";
 				PRODUCT_NAME = Once;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -747,7 +738,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/module.modulemap";
 				OTHER_CFLAGS = "-DXCODE_FRAMEWORK=1";
-				OTHER_SWIFT_FLAGS = "-DXCODE_FRAMEWORK";
 				PRODUCT_BUNDLE_IDENTIFIER = "Braden-Scothern.Once-iOS";
 				PRODUCT_NAME = Once;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -811,7 +801,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/module.modulemap";
 				OTHER_CFLAGS = "-DXCODE_FRAMEWORK=1";
-				OTHER_SWIFT_FLAGS = "-DXCODE_FRAMEWORK";
 				PRODUCT_BUNDLE_IDENTIFIER = "Braden-Scothern.Once-macOS";
 				PRODUCT_NAME = Once;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -840,7 +829,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/module.modulemap";
 				OTHER_CFLAGS = "-DXCODE_FRAMEWORK=1";
-				OTHER_SWIFT_FLAGS = "-DXCODE_FRAMEWORK";
 				PRODUCT_BUNDLE_IDENTIFIER = "Braden-Scothern.Once-macOS";
 				PRODUCT_NAME = Once;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -904,7 +892,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/module.modulemap";
 				OTHER_CFLAGS = "-DXCODE_FRAMEWORK=1";
-				OTHER_SWIFT_FLAGS = "-DXCODE_FRAMEWORK";
 				PRODUCT_BUNDLE_IDENTIFIER = "Braden-Scothern.Once-tvOS";
 				PRODUCT_NAME = Once;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -932,7 +919,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/module.modulemap";
 				OTHER_CFLAGS = "-DXCODE_FRAMEWORK=1";
-				OTHER_SWIFT_FLAGS = "-DXCODE_FRAMEWORK";
 				PRODUCT_BUNDLE_IDENTIFIER = "Braden-Scothern.Once-tvOS";
 				PRODUCT_NAME = Once;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -997,7 +983,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/module.modulemap";
 				OTHER_CFLAGS = "-DXCODE_FRAMEWORK=1";
-				OTHER_SWIFT_FLAGS = "-DXCODE_FRAMEWORK";
 				PRODUCT_BUNDLE_IDENTIFIER = "Braden-Scothern.Once-watchOS";
 				PRODUCT_NAME = Once;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1026,7 +1011,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "${PROJECT_DIR}/Sources/module.modulemap";
 				OTHER_CFLAGS = "-DXCODE_FRAMEWORK=1";
-				OTHER_SWIFT_FLAGS = "-DXCODE_FRAMEWORK";
 				PRODUCT_BUNDLE_IDENTIFIER = "Braden-Scothern.Once-watchOS";
 				PRODUCT_NAME = Once;
 				PROVISIONING_PROFILE_SPECIFIER = "";

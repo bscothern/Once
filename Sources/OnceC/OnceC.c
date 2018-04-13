@@ -26,13 +26,8 @@
 // SOFTWARE.
 //
 
-#ifdef XCODE_FRAMEWORK
-#include "OnceC.h"
-#else
-#include <OnceC/OnceC.h>
-#endif
-
 #include <stdlib.h>
+#include "OnceC.h"
 
 //MARK:- Forward Declarations
 
