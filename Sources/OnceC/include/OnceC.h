@@ -29,6 +29,7 @@
 #ifndef OnceC_h
 #define OnceC_h
 
+#include <sys/types.h>
 #include <pthread.h>
 
 /// The struct that we will use in Swift since we cannot directly access `pthread_once_t`.

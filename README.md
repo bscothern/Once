@@ -14,7 +14,7 @@ github "bscothern/Once"
 ## Swift Package Manager
 Update your `Package.swift` to include this to your package dependencies:
 ```
-.package(url: "https://github.com/bscothern/Once.git", from: "1.2.0")
+.package(url: "https://github.com/bscothern/Once.git", from: "1.3.0")
 ```
 
 ## Usage
