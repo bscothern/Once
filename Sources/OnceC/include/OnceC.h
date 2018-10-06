@@ -34,7 +34,7 @@
 
 /// The struct that we will use in Swift since we cannot directly access `pthread_once_t`.
 ///
-/// Because this only contains the `pthread_once_t`, it will be identical in size.
+/// Because this only contains the `pthread_once_t`, it will be identical in size and layout.
 typedef struct OnceC {
     pthread_once_t p_once;
 } OnceC;
