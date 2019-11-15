@@ -3,7 +3,7 @@
 //  OnceTests
 //
 //  Created by Braden Scothern on 10/11/17.
-//  Copyright © 2017 Braden Scothern. All rights reserved.
+//  Copyright © 2017-2019 Braden Scothern. All rights reserved.
 //
 // The MIT License (MIT)
 //

@@ -3,7 +3,7 @@
 //  Once
 //
 //  Created by Braden Scothern on 10/11/17.
-//  Copyright © 2017 Braden Scothern. All rights reserved.
+//  Copyright © 2017-2019 Braden Scothern. All rights reserved.
 //
 // The MIT License (MIT)
 //
@@ -55,11 +55,23 @@ public class Once {
     }
 
     //MARK: Private
-    private var onceC: OnceC = OnceCCreate()
+    
+    // UnsafeMutablePointer must be used here to ensure that memory issues don't occur.
+    // Follow the thread from this post for more information: https://forums.swift.org/t/atomic-property-wrapper-for-standard-library/30468/15
+    private var onceC: UnsafeMutablePointer<OnceC>
 
     //MARK:- Init
     //MARK: Public
+    
+    /// Create a `Once` that ensurse a block only executes once.
     public init() {
+        onceC = .allocate(capacity: 1)
+        onceC.initialize(to:  OnceCCreate())
+    }
+    
+    deinit {
+        onceC.deinitialize(count: 1)
+        onceC.deallocate()
     }
 
     //MARK:- Funcs
@@ -72,7 +84,7 @@ public class Once {
         withoutActuallyEscaping(block) { block in
             var block = block
             withUnsafePointer(to: &block) { block in
-                OnceCRun(&onceC, Once.runner, block)
+                OnceCRun(onceC, Once.runner, block)
             }
         }
     }
