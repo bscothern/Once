@@ -1,4 +1,4 @@
-// swift-tools-version:5.2
+// swift-tools-version:4.0
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -8,8 +8,7 @@ let package = Package(
     products: [
         .library(
             name: "Once",
-            targets: ["Once"]
-        ),
+            targets: ["OnceC", "Once"]),
     ],
     dependencies: [
     ],
@@ -21,16 +20,12 @@ let package = Package(
         ),
         .target(
             name: "Once",
-            dependencies: [
-                .target(name: "OnceC")
-            ],
+            dependencies: ["OnceC"],
             path: "Sources/Swift"
         ),
         .testTarget(
             name: "OnceTests",
-            dependencies: [
-                .target(name: "Once")
-            ]
+            dependencies: ["Once"]
         ),
     ]
 )
